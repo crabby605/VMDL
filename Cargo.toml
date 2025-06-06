@@ -1,0 +1,28 @@
+[package]
+name = "vmdl-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A parser for Vihaan's Minimal Data Language (VMDL)"
+authors = ["Vihaan Pingalkar"]
+license = "MIT"
+
+[lib]
+name = "vmdl_rs"
+path = "src/rust/lib.rs"
+
+[[bin]]
+name = "vmdl-parser"
+path = "src/rust/main.rs"
+
+exclude = [
+    "src/javascript/*",
+    "src/javascript/**",
+    "*.js",
+    "*.ts",
+    "node_modules/*",
+    "node_modules/**"
+]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

@@ -1,0 +1,18 @@
+# Example VMDL configuration file
+Project = my-worker
+Type = javascript
+Main = src/index.js
+Workers Dev = false
+Compatibility Date = 2025-06-05
+Route = example.org/*
+Zone Name = example.org
+KV Namespaces:
+    MY_NAMESPACE = <KV_ID>
+Environments:
+    Staging:
+        Project Name = my-worker-staging
+        Route = staging.example.org/*
+        Zone Name = example.org
+        KV Namespaces:
+            MY_NAMESPACE = <STAGING_KV_ID>
+Notes = Configuration for a Cloudflare Worker with staging environment setup.
