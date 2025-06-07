@@ -1,0 +1,21 @@
+{
+  "name": "@vmdl/parser",
+  "version": "0.0.1",
+  "description": "A parser for Vihaan's Minimal Data Language (VMDL)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example.js"
+  },
+  "keywords": [
+    "vmdl",
+    "parser",
+    "data",
+    "language",
+    "configuration"
+  ],
+  "author": "Vihaan Pingalkar",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
